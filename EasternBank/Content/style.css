@@ -1,0 +1,326 @@
+/* GENERAL */
+body {
+    background-color: #f4f6f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.navbar-brand a:hover {
+    color: #336cdd;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #337ab7;
+    padding-right: 7px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #336cdd;
+}
+
+#internet-bank {
+    background: linear-gradient(to right, #00549d, #336cdd);
+    color: #fff;
+    margin-right: -16px;
+}
+
+.navbar-header .navbar-brand {
+    color: #337ab7;
+}
+
+.active-tab {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.body-content {
+    position: relative;
+}
+
+.girl-and-button {
+    margin-top: -20px;
+    background: url(../img/girl.png) no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+}
+
+.order-button {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.order-button a {
+    display: inline-block;
+    width: 160px;
+    height: 42px;
+    border-radius: 2em;
+    box-shadow: 0 2px 5px #a7a7a7;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 44px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #337ab7;
+}
+
+.order-button a:active {
+    margin-top: 7px;
+    box-shadow: 0 1px 1px #f0f0f0;
+}
+
+.menu-links {    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+}
+
+.menu-links ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-links ul li img {        
+    width: 75px;
+}
+
+.pic {    
+    width: 75px;
+    height: 75px;    
+}
+
+#paycash .pic {
+    background: url(../img/paycash.png) no-repeat;
+    background-size: contain;
+}
+
+#paycash:hover .pic  {
+    background: url(../img/paycash-blue.png);
+    background-size: contain;
+}
+
+#credits .pic {
+    background: url(../img/credits.png) no-repeat;
+    background-size: contain;
+}
+
+#credits:hover .pic {
+    background: url(../img/credits-blue.png);
+    background-size: contain;
+}
+
+#deposits .pic {
+    background: url(../img/deposits.png) no-repeat;
+    background-size: contain;
+}
+
+#deposits:hover .pic {
+    background: url(../img/deposits-blue.png) no-repeat;
+    background-size: contain;
+}
+
+#payrolls .pic {
+    background: url(../img/payrolls.png) no-repeat;
+    background-size: contain;
+}
+
+#payrolls:hover .pic {
+    background: url(../img/payrolls-blue.png) no-repeat;
+    background-size: contain;
+}
+
+#services .pic {
+    background: url(../img/services.png) no-repeat;
+    background-size: contain;
+}
+
+#services:hover .pic {
+    background: url(../img/services-blue.png) no-repeat;
+    background-size: contain;
+}
+
+#enquiring .pic {
+    background: url(../img/enquiring.png) no-repeat;
+    background-size: contain;
+}
+
+#enquiring:hover .pic {
+    background: url(../img/enquiring-blue.png) no-repeat;
+    background-size: contain;
+}
+
+#additional .pic {
+    background: url(../img/additional.png) no-repeat;
+    background-size: contain;
+}
+
+#additional:hover .pic {
+    background: url(../img/additional-blue.png) no-repeat;
+    background-size: contain;
+}
+
+.menu-links ul li a:hover {
+    text-decoration: none;
+    color: #336cdd;
+}
+
+.icon-and-caption {    
+    width: 75px;
+    height: 145px;
+    text-align: center;
+    margin-right: 75px;
+}
+
+.calc-guarantees-button {
+    position: relative;
+    height: 50px;
+}
+
+.calc-guarantees-button a {
+    display: inline-block;
+    width: 355px;
+    height: 50px;
+    border-radius: 2em;
+    box-shadow: 0 2px 5px #a7a7a7;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    background: #00549d;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.calc-guarantees-button a:active {
+    margin-top: 5px;
+    box-shadow: 0 1px 1px #f0f0f0;
+}
+
+.icon-right-open {    
+    color: #FF3333;
+}
+
+.guaranty {
+    text-align: center;
+}
+
+.guaranty h1 {
+    color: #00549d;
+    font-size: 60px;
+}
+
+.guaranty h3 a {
+    color: #00549d;
+}
+
+.guaranty h3 a:hover {
+    text-decoration: none;
+    color: #336cdd;
+}
+
+.guaranty p {
+    color: #337ab7;
+    font-size: 20px;
+}
+
+.guaranty p a {
+    color: #00549d;
+}
+
+.guaranty p a:hover {
+    text-decoration: none;
+    color: #336cdd;
+}
+
+.top-of-footer {
+    min-height: 145px;
+    /*padding-bottom: 75px;*/
+    background-color: #f3f7f8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .top-of-footer ul li {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+        .top-of-footer ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .top-of-footer ul li a {
+            font-size: 16px;
+        }
+
+/* FOOTER */
+footer {
+    background: #00549e;
+    color: #fff;
+    height: auto;
+    padding-bottom: 100px
+}
+
+.offering-column {
+    margin-right: 5%;
+}
+
+.services {
+    margin-top: 2em;
+}
+
+.services li {
+    list-style: none;
+}
+
+.services li a {
+    color: #fff;
+}
+
+.services li a:hover {
+    text-decoration: none;
+    color: #336cdd;
+}
+
+.license-and-social {
+    width: 350px;
+    margin-right: 20%;
+}
+
+.social-marks-list li {
+    display: inline-block;
+}
+
+.social-marks-list li a {
+    margin-right: 5px;
+}
+
+.social-marks-list li a img {
+    width: 32px;
+}
+
+.social-marks-list li a img:hover {
+    opacity: 0.3;
+}

@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eastern Bank | @ViewBag.Title</title>
+    <link rel="icon" href="@Url.Content("~/img/favicon.ico")" />
+    <link rel="shortcut icon" href="@Url.Content("~/img/favicon.ico")" type="image/x-icon">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <div class="navbar navbar-default">        
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">@Html.ActionLink("Eastern Bank", "Index", "Home")</div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Частным лицам</a></li>
+                    <li>@Html.ActionLink("Бизнесу", "ForBusiness", "Home")
+                    <li><a href="#">VIP-клиентам</a></li>
+                    <li><a href="#">Агентам банка</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="icon-search"></i></a></li>
+                    <li>@Html.ActionLink("О Банке", "About", "Home")</li>
+                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                    <li><a href="#">Помощь</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Москва<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Санкт-Петербург</a></li>
+                            <li><a href="#">Екатеринбург</a></li>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Выбрать другой город...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Eng / Рус</a></li>
+                    <li>@Html.ActionLink("@Интернет-банк для юр. лиц", "Index", "Home", new { id = "internet-bank" })</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer class="fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 offering-column">
+                    <ul class="services">
+                        <li><a href="#">КРЕДИТЫ</a></li>
+                        <li><a href="#">Ипотечный кредит</a></li>
+                        <li><a href="#">Премиум-кредит</a></li>
+                        <li><a href="#">Барковские гарантии</a></li>
+                        <li><a href="#">Большой сезон</a></li>
+                        <li><a href="#">Кредит наличными</a></li>
+                        <li><a href="#">Рефинансирование ипотечного кредита</a></li>
+                        <li><a href="#">Всегда в плюсе</a></li>
+                        <li><a href="#">Потребительский кредит под залог недвижимости</a></li>
+                        <li><a href="#">Премиум-кредит с залогом недвижимости</a></li>
+                        <li><a href="#">Кредит на исполнение контракта</a></li>
+                        <li><a href="#">Кредит наличными 3.1</a></li>
+                        <li><a href="#">Премиум Авто</a></li>
+                        <li><a href="#">Большие деньги</a></li>
+                        <li><a href="#">Кредиты юридическим лицам</a></li>
+                        <li><a href="#">Овердрафт-Комплимент</a></li>
+                        <li><a href="#">Равный платеж</a></li>
+                        <li><a href="#">Овердрафт под обороты</a></li>
+                        <li><a href="#">Смарт-кошелёк</a></li>
+                        <li><a href="#">Овердрафт-Экспресс</a></li>
+                        <li><a href="#">Потребительский кредит Пенсионный</a></li>
+                        <li><a href="#">Потребительский кредит Сезонный</a></li>
+                        <li><a href="#">Потребительский Автокредит</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">ВКЛАДЫ ДЛЯ ФИЗИЧЕСКИХ ЛИЦ</a></li>
+                        <li><a href="#">VIP Срочный</a></li>
+                        <li><a href="#">Сберкнижка</a></li>
+                        <li><a href="#">VIP Сберплан</a></li>
+                        <li><a href="#">Растущий процент</a></li>
+                        <li><a href="#">VIP Сберсчёт</a></li>
+                        <li><a href="#">Растущий процент VIP</a></li>
+                        <li><a href="#">Практичный</a></li>
+                        <li><a href="#">Мультивалютный-VIP</a></li>
+                        <li><a href="#">Eastern</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">РАСЧЁТНО-КАССОВОЕ ОБСЛУЖИВАНИЕ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 offering-column">
+                    <ul class="services">
+                        <li><a href="#">ВКЛАДЫ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ</a></li>
+                        <li><a href="#">Казначейский</a></li>
+                        <li><a href="#">Срочный Eastern</a></li>
+                        <li><a href="#">Сберплан</a></li>
+                        <li><a href="#">С правом досрочного изъятия</a></li>
+                        <li><a href="#">Время - деньги</a></li>
+                        <li><a href="#">Деловой подход</a></li>
+                        <li><a href="#">Урожайные проценты</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">ОФИСЫ И БАНКОМАТЫ</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">КРЕДИТНЫЕ КАРТЫ</a></li>
+                        <li><a href="#">Visa Infinite</a></li>
+                        <li><a href="#">«Карта Путешественника Премиум»</a></li>
+                        <li><a href="#">Сезонная карта</a></li>
+                        <li><a href="#">Карта Кэшбэк</a></li>
+                        <li><a href="#">Visa Signature Avtocard</a></li>
+                        <li><a href="#">АвтоКарта</a></li>
+                        <li><a href="#">Рассрочка на всё</a></li>
+                        <li><a href="#">Кредитная карта Visa Signature</a></li>
+                        <li><a href="#">Карта Тепло</a></li>
+                        <li><a href="#">Карта Cashback</a></li>
+                        <li><a href="#">Карта Путешественника</a></li>
+                        <li><a href="#">Просто карта</a></li>
+                        <li><a href="#">Кредитная карта «Под залог недвижимости»</a></li>
+                        <li><a href="#">Спортивная карта</a></li>
+                        <li><a href="#">Большой беспроцент</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 offering-column">
+                    <ul class="services">
+                        <li><a href="#">АКЦИИ И БОНУСЫ</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Частые вопросы</a></li>
+                        <li><a href="#">Схема голосового меню (IVR)</a></li>
+                        <li><a href="#">Погашение кредита</a></li>
+                        <li><a href="#">Журнал «Ориентир» - Ваш путеводитель по финансам</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">О БАНКЕ</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Карьера в банке</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Раскрытие информации</a></li>
+                        <li><a href="#">Раскрытие информации на сайте ООО «Интерфакс-ЦРКИ»</a></li>
+                        <li>
+                            <a href="#">
+                                Информация о лицах, под контролем либо значительным влиянием которых находится
+                                Банк
+                            </a>
+                        </li>
+                        <li><a href="#">Информация о максимальных процентных ставках по вкладам физических лиц</a></li>
+                        <li>
+                            <a href="#">Информация о присоединении КБ «Western Bank» (ООО) к ПАО КБ «Eastern Bank»</a>
+                        </li>
+                        <li><a href="#">Тариф «Western Bank»</a></li>
+                        <li><a href="#">Закупки</a></li>
+                    </ul>
+                    <ul class="services">
+                        <li><a href="#">КАРТА САЙТА</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 license-and-social">
+                    <ul class="services">
+                        <li>EASTERN BANK</li>
+                    </ul>
+                    <ul class="services">
+                        <li>Генеральная лицензия Банка России</li>
+                        <li>№1460 от 24.10.2014 г.</li>
+                        <li>&copy; 2006-2019, ПАО КБ «Eastern Bank»</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 license-and-social">
+                    <ul class="services social-marks-list">
+                        <li><a href="facebook.com"><img src="~/img/fb.png" alt="Facebook"></a></li>
+                        <li><a href="vk.com"><img src="~/img/vk.png" alt="VKontakte"></a></li>
+                        <li><a href="ok.ru"><img src="~/img/ok.png" alt="Odnoklassniki"></a></li>
+                        <li><a href="twitter.com"><img src="~/img/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="instagram.com"><img src="~/img/inst.png" alt="Instagram"></a></li>
+                    </ul>
+                    <ul class="services">
+                        <li>Разработано в "Веб-Студии"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    @RenderSection("scripts", required: false)    
+</body>
+</html>
